@@ -1,0 +1,493 @@
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    list-style: none;
+    color: var(--purple-1);
+}
+
+/* root css */
+:root {
+    --white: #ffffff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #434E5E;
+    --secondary: #58677c;
+    --balck: #000000a6;
+
+    --pink-1: #fe2f67;
+    --pink-2: #e01e5a;
+    --pink-4: #D1BFF7;
+    --pink-5: #F1C6F2;
+
+    --purple-1: #1e1541;
+    --purple-2: #3a2b80;
+    --purple-3: #3b2a82;
+    --purple-4: #9d96bf;
+    --purple-5: #ada5cc;
+    --purple-6: #E5DEFF;
+
+    /* ----root-linear-gradient-color--------- */
+    --gradient-purple-pink: linear-gradient(#3a2b80, #ff3068);
+    --arc-gradient-purple-brown: linear-gradient(180deg, #FF3068 0%, #390513 100%);
+    --text-gradient: linear-gradient(90deg, #3A2B80 16.3%, #FF3068 57.25%);
+    --home-darker-balon-gradient: linear-gradient(180deg, rgba(255, 106, 106, 0.3) 0%, #BB85FF 100%);
+    --home--light-balon-gradient: linear-gradient(180deg, rgba(253, 208, 221, 0.3) 0%, rgba(253, 135, 255, 0.3) 100%);
+    --arch-image-overlay-gradient: linear-gradient(70.77deg, #2E1E76 0.88%, rgba(49, 33, 121, 0.28) 53.75%);
+    --socail-link-glass-gradient: linear-gradient(18.81deg, rgba(255, 255, 255, 0.45) 5.66%, rgba(255, 255, 255, 0.52) 90.79%);
+
+
+    /* --------root-box-shadow-------- */
+    --white-card-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+
+    /* -----root-brake-points------- */
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+
+    /* ---root-font-family--- */
+    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    --font-family-denk: 'Denk One', sans-serif;
+
+    /* ----root-grid-percentage--------- */
+    --col-1: 8.33%;
+    --col-2: 16.66%;
+    --col-3: 25%;
+    --col-4: 33.33%;
+    --col-5: 41.66%;
+    --col-6: 50%;
+    --col-7: 58.33%;
+    --col-8: 66.66%;
+    --col-9: 75%;
+    --col-10: 83.33%;
+    --col-11: 91.66%;
+    --col-12: 100%;
+}
+
+
+/*---Side Scroll Bar ---*/
+::-webkit-scrollbar {
+    width: 1.2vmin;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--white);
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, #fe2f67 0%, #1e1541 100%);
+    border-radius: 15px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--purple-1);
+}
+
+
+
+body {
+    width: 100vw;
+    height: auto;
+    overflow-x: hidden;
+    font-size: 14px;
+    background: var(--white);
+    font-family: 'Denk One', sans-serif;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+body.fade-out {
+    opacity: 0;
+    background: var(--purple-6);
+
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 5%;
+    justify-content: space-between;
+}
+
+
+/* -----Header component style start here-----------*/
+header {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url("./images/header-blur.png"), linear-gradient(110.97deg, rgba(255, 255, 255, 0.5) -4.87%, rgba(255, 255, 255, 0) 103.95%);
+    backdrop-filter: blur(8px);
+}
+
+.navbar {
+    position: fixed;
+    top: -80px;
+    z-index: 999;
+    transition: top 0.5s ease-in-out;
+}
+
+/* Slide the navbar down when the page loads */
+.navbar.slide-down {
+    top: 0;
+}
+
+.header-log img {
+    height: 40px;
+    width: auto;
+}
+
+.nav-container .nav-lists {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-container ul li {
+    /* display: flex; */
+    margin: 0px 10px;
+}
+
+.nav-container ul li i {
+    margin: 0px 4px;
+    font-size: large;
+}
+
+/* dropdown */
+.dropdown {
+    display: block;
+    float: left;
+    height: 60px !important;
+    padding-top: 22px;
+    position: relative;
+}
+
+.dropdown li {
+    padding: 10px;
+}
+
+.dropdown li a,
+.dropdown .fa-database,
+.dropdown .fa-cube {
+    color: var(--purple-1) !important;
+}
+
+.dropdown li:hover {
+    background-color: var(--purple-5);
+    color: var(--purple-6);
+    padding: 10px;
+    cursor: pointer;
+    backdrop-filter: blur(11px);
+}
+
+.nav-container ul li ul {
+    color: var(--purple-1);
+    visibility: hidden;
+    opacity: 0;
+    min-width: 250px;
+    height: auto;
+    position: absolute;
+    transition: all 0.5s ease;
+    left: 0;
+    display: none;
+}
+
+.nav-container ul li:hover>ul,
+.nav-container ul li ul:hover {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+    padding-top: 1.3rem;
+    padding-left: 2vmin;
+    margin-top: 1.3rem;
+    margin-bottom: 1.3rem;
+    background: var(--purple-6);
+    color: var(--purple-1);
+    transform-origin: top center;
+}
+
+.nav-container ul li a:hover,
+.nav-container ul li i:hover {
+    color: var(--pink-1) !important;
+}
+
+#menu-toggle {
+    display: none;
+    font-size: x-large;
+    cursor: pointer;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+.menu {
+    display: none;
+}
+
+
+/*------pages----------*/
+.landing,
+.about,
+.project,
+.database,
+.api-testing,
+.resume {
+    position: relative;
+    width: 100%;
+    padding-top: 60px;
+    height: auto;
+}
+
+.neon-btn {
+    color: var(--white) !important;
+    width: 130px;
+    font-family: var(--font-family-denk);
+    height: 40px;
+    padding: 10px 25px;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    background: var(--pink-1);
+    box-shadow: 0 0 5px var(--pink-1), 0 0 8px var(--pink-1);
+    line-height: 42px;
+    padding: 0;
+    border: none;
+    z-index: 2;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+
+.neon-btn i {
+    color: var(--white) !important;
+}
+
+.neon-btn:hover {
+    background-color: transparent;
+    color: var(--pink-1);
+    box-shadow: 0 5px 3px -3px var(--pink-1), 0 -5px 3px -3px var(--pink-1),
+        0 5px 3px -3px var(--pink-1), 0 -5px 3px -3px var(--pink-1);
+}
+
+.neon-btn:before,
+.neon-btn:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    width: 100%;
+    height: 50%;
+    right: 0;
+    z-index: -1;
+    background: var(--pink-1);
+    box-shadow: 0 0 5px var(--pink-1);
+    transition: all 0.3s ease;
+}
+
+.neon-btn:before {
+    top: 0;
+}
+
+.neon-btn:after {
+    bottom: 0;
+}
+
+.neon-btn:hover:before,
+.neon-btn:hover:after {
+    height: 0;
+    background-color: var(--pink-1);
+}
+
+
+/* -----Landing page style start here----------*/
+.landing {}
+
+.first-view {
+    position: relative;
+    overflow: visible;
+    width: 100vw;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    clip-path: polygon(0% 0%, 0% 100%, 10% 100%, 50% 70%, 90% 100%, 100% 100%, 100% 0%);
+    background: linear-gradient(67.66deg, #D1BFF7 0%, #F1E4EF 99.24%);
+}
+
+.first-view * {
+    z-index: 1;
+}
+
+.first-view h3 {
+    font-size: 4vmin;
+    margin-top: 5vmin;
+}
+
+.first-view h1 {
+    font-size: 8vmin;
+    margin-bottom: 3vmin;
+    background: linear-gradient(90deg, #3A2B80 16.3%, #FF3068 57.25%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.dom-png {
+    width: 70%;
+    height: auto;
+    max-width: var(--breakpoint-xl);
+}
+
+.dom-logo-container {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    z-index: 99;
+    background: #0000005f;
+}
+
+.dong-png-logo {
+    position: absolute;
+    width: 30vw;
+    align-self: center;
+    z-index: 14;
+    transform: translateY(-70vh);
+}
+
+.buble-below-dom,
+.buble-above-overlay {
+    width: 30vmin;
+    height: 30vmin;
+    position: absolute;
+    border-radius: 50%;
+    background: linear-gradient(180deg, rgba(253, 208, 221, 0.3) 0%, rgba(253, 135, 255, 0.3) 100%);
+    box-shadow: 10px 20px 40px rgba(255, 106, 106, 0.3);
+}
+
+.buble-below-dom {
+    left: 18%;
+    z-index: -1;
+    transform: translateY(-50%);
+}
+
+.buble-above-overlay {
+    right: 15%;
+    transform: translateY(40%);
+}
+
+@media(max-width: 576px) {
+    .dong-png-logo {
+        width: 30vmin;
+        transform: translateY(-55vh);
+    }
+}
+
+@media(max-width: 762px) {
+    .dong-png-logo {
+        width: 30vmin;
+        transform: translateY(-64vh);
+    }
+
+    .nav-container,
+    .nav-resume-btn {
+        display: none;
+    }
+    .menu-toggle {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 20px;
+        cursor: pointer;
+    }
+    
+    .menu-toggle span {
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: black;
+        transition: all 0.3s ease-in-out;
+    }
+    
+    .menu-toggle.active span:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .menu-toggle.active span:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    
+    .menu-toggle.active span:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    
+    .menu {
+        background:#4d37a896;
+        color: var(--purple-6);
+        position: absolute;
+        width: 100vw;
+        height: 100vw;
+        top: 60px;
+        left: 0;
+        display: none;
+    }
+    .menu li a{
+        font-size: 6vmin;
+        color: var(--purple-6);
+    }
+    .menu.active {
+        display: block;
+    }
+
+}
+
+
+/* -----About page style start here------------*/
+
+
+
+/* -----Database page style start here---------*/
+
+
+
+/* -----Api testing page style start here------*/
+
+
+
+/* -----Projetct page style start here-------- */
+#projects-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    grid-gap: 20px;
+}
+
+
+/* -----Resume page style start here-----------*/
+
+
+
+/* -----footer component style start here-----------*/
+
+/* @media(max-width: var(--breakpoint-xs)){
+    .container {
+        width: ;
+    }
+} */
