@@ -742,8 +742,37 @@ nav {
 
 
 /* -----Resume page style start here-----------*/
-
-
+.resume-container {
+    width: 100%;
+    margin-top: 10vh;
+    height: auto;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(111.68deg, rgba(255, 223, 232, 0.37) 7.59%, rgba(246, 225, 231, 0.49) 102.04%);
+    backdrop-filter: blur(11px);
+    border-radius: 40px;
+}
+.iner-resume-shadow {
+    padding: 3% 3%;
+    background: linear-gradient(123.21deg, #C0C0E8 6.62%, rgba(192, 192, 232, 0) 95.03%);
+    box-shadow: 0px 4px 4px #D7BCC3;
+    border-radius: 25px;
+}
+.btn-resume-container {
+    width: 100%;
+    text-align: end;
+}
+.resume-container button{
+    margin-top: 5vh;
+    padding: 3vmin 12vmin;
+    background: var(--pink-1);
+    border: none;
+    border-radius: 10px;
+    color: var(--white);
+}
 
 
 
