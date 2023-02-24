@@ -313,7 +313,7 @@ nav {
     right: 0;
     z-index: -1;
     background: var(--pink-1);
-    box-shadow: 0 0 5px var(--pink-1);
+    box-shadow: 0 0 5px var(--pink-4);
     transition: all 0.3s ease;
 }
 
@@ -592,6 +592,18 @@ nav {
     font-size: 2vmin;
 }
 
+@media(max-width: 1200px) {
+    .dong-png-logo {
+        width: 30vmin;
+        transform: translateY(-62vh);
+    }
+}
+@media(max-width: 992px) {
+    .dong-png-logo {
+        width: 30vmin;
+        transform: translateY(-55vh);
+    }
+}
 @media(max-width: 576px) {
     .dong-png-logo {
         width: 30vmin;
@@ -602,7 +614,7 @@ nav {
 @media(max-width: 762px) {
     .dong-png-logo {
         width: 30vmin;
-        transform: translateY(-64vh);
+        transform: translateY(-50vh);
     }
 
     .nav-container,
@@ -686,16 +698,6 @@ nav {
     text-align: center;
     color: var(--purple-6);
 }
-/* .about-png-flex {
-    width: 100%;
-    height: 20vmin;
-    background: #000;
-    border-radius: 25px;
-    display: flex;
-}
-.about-png-flex img{
-    width: 3%;
-} */
 .about .card-container .about-png-flex{
   padding-bottom: 0!important;
   display: flex;
@@ -704,7 +706,9 @@ nav {
 }
 .about .card-container .about-png-flex img{
     width: 45%;
-
+}
+.left-inspire-txt{
+    width: 100%;
 }
 /* -----Database page style start here---------*/
 #database .first-view{
