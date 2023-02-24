@@ -69,7 +69,20 @@ class Header extends HTMLElement {
               ><i class="fa fa-product-hunt"></i> Projects</a
             >
           </li>
+
+
+          <li>
+                <a href="database.html"
+                  ><i class="fa fa-database"></i> Database Diagrams</a
+                >
+              </li>
+              <li>
+                <a href="api-testing.html">
+                  <i class="fa fa-cube"></i> API Unit Tests</a
+                >
+              </li>
           
+
           <li>
             <button type="submit" class="neon-btn">
               <a href="resume.html">Resume</a>
