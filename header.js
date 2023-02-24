@@ -97,8 +97,8 @@ class Header extends HTMLElement {
         </div>
         </nav>
         
-        <button type="submit" class="neon-btn fade-out nav-resume-btn">
-          <a href="resume.html">Resume</a> <i class="fa fa-caret-right"></i>
+        <button type="submit" class="neon-btn fade-out nav-resume-btn" >
+          <a href="resume.html" id="resume-a-btn">Resume</a> <i class="fa fa-caret-right"></i>
         </button>
     </div>
   </header>
