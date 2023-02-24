@@ -772,22 +772,28 @@ nav {
 }
 .my-resume{
     width: 100%;
+    height: 100%;
     display: flex;
     padding:5% 3% ;
     align-items: center;
     justify-content: space-between;
     background: var(--white);
-    background: #f784ff;
+}
+.my-resume h1, .my-resume h2, .my-resume h5{
+    margin-bottom: 2vmin;
+}
+.my-resume ul li{
+    margin-bottom: 1vmin;
+    list-style: circle;
 }
 .resume-left{
     width: 50%;
-    height: 100%;
-    background: #f5caca;
+    margin-right: 2%;
 }
 .resume-right{
     width: 50%;
     height: 100%;
-    background: #d0fa95;
+    margin-left: 2%;
 }
 
 .btn-resume-container button{
