@@ -143,6 +143,9 @@ header {
     align-items: center;
     justify-content: center;
     background: url("./images/header-blur.png"), linear-gradient(110.97deg, rgba(255, 255, 255, 0.5) -4.87%, rgba(255, 255, 255, 0) 103.95%);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     backdrop-filter: blur(8px);
 }
 
@@ -755,7 +758,8 @@ nav {
     backdrop-filter: blur(11px);
     border-radius: 40px;
 }
-.iner-resume-shadow {
+.inner-resume-shadow {
+    width: 100%;
     padding: 3% 3%;
     background: linear-gradient(123.21deg, #C0C0E8 6.62%, rgba(192, 192, 232, 0) 95.03%);
     box-shadow: 0px 4px 4px #D7BCC3;
@@ -763,9 +767,30 @@ nav {
 }
 .btn-resume-container {
     width: 100%;
+    height: auto;
     text-align: end;
 }
-.resume-container button{
+.my-resume{
+    width: 100%;
+    display: flex;
+    padding:5% 3% ;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--white);
+    background: #f784ff;
+}
+.resume-left{
+    width: 50%;
+    height: 100%;
+    background: #f5caca;
+}
+.resume-right{
+    width: 50%;
+    height: 100%;
+    background: #d0fa95;
+}
+
+.btn-resume-container button{
     margin-top: 5vh;
     padding: 3vmin 12vmin;
     background: var(--pink-1);
@@ -774,7 +799,12 @@ nav {
     color: var(--white);
 }
 
-
+.my-resume *{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.my-resume  h1 *{
+    color: #088471;
+}
 
 
 
