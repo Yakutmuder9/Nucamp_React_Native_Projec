@@ -62,10 +62,10 @@ class Footer extends HTMLElement {
                     <path d="M24.75 38.25H15.75C12.6375 38.25 9.984 37.1528 7.7895 34.9583C5.595 32.7638 4.4985 30.111 4.5 27C4.5 23.8875 5.59725 21.234 7.79175 19.0395C9.98625 16.845 12.639 15.7485 15.75 15.75H24.75V20.25H15.75C13.875 20.25 12.2813 20.9063 10.9688 22.2188C9.65625 23.5313 9 25.125 9 27C9 28.875 9.65625 30.4688 10.9688 31.7813C12.2813 33.0938 13.875 33.75 15.75 33.75H24.75V38.25ZM18 29.25V24.75H36V29.25H18ZM29.25 38.25V33.75H38.25C40.125 33.75 41.7188 33.0938 43.0312 31.7813C44.3438 30.4688 45 28.875 45 27C45 25.125 44.3438 23.5313 43.0312 22.2188C41.7188 20.9063 40.125 20.25 38.25 20.25H29.25V15.75H38.25C41.3625 15.75 44.016 16.8473 46.2105 19.0418C48.405 21.2363 49.5015 23.889 49.5 27C49.5 30.1125 48.4028 32.766 46.2083 34.9605C44.0138 37.155 41.361 38.2515 38.25 38.25H29.25Z" fill="#FE2F67"/>
                     </svg> Socail link</h3>
                      <ul class="u-link">
-                        <li><a href="">- Bellevue Universities Web Development Degree</a></li>
-                        <li><a href="">- Bellevue Universities Course's YouTube channel.</a></li>
-                        <li><a href="">- Bellevue Universities  Courses GitHub Repositories.</a></li>
-                        <li><a href="">- My GitHub Repositories.</a></li>
+                        <li><a href="https://bruinconnect.bellevue.edu/">- Bellevue Universities Web Development Degree</a></li>
+                        <li><a href="#">- Bellevue Universities Course's YouTube channel.</a></li>
+                        <li><a href="https://github.com/buwebdev">- Bellevue Universities  Courses GitHub Repositories.</a></li>
+                        <li><a href="https://github.com/Yakutmuder9">- My GitHub Repositories.</a></li>
                      </ul>
 
                      <div class="contact-me">

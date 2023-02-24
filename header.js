@@ -26,13 +26,13 @@ class Header extends HTMLElement {
       <div class="nav-container">
         <ul class="nav-lists">
           <li>
-            <a href="index.html"> <i class="fa fa-home"></i> Home </a>
+            <a href="index.html" class="nav-link"> <i class="fa fa-home"></i> Home </a>
           </li>
           <li>
-            <a href="about.html"> <i class="fa fa-exclamation"></i> About </a>
+            <a href="about.html" class="nav-link"> <i class="fa fa-exclamation"></i> About </a>
           </li>
           <li>
-            <a href="projects.html"
+            <a href="projects.html" class="nav-link"
               ><i class="fa fa-product-hunt"></i> Projects</a
             >
           </li>
@@ -42,12 +42,12 @@ class Header extends HTMLElement {
             <i class="fa fa-angle-down"></i>
             <ul>
               <li>
-                <a href="database.html"
+                <a href="database.html" class="nav-link"
                   ><i class="fa fa-database"></i> Database Diagrams</a
                 >
               </li>
               <li>
-                <a href="api-testing.html">
+                <a href="api-testing.html" class="nav-link">
                   <i class="fa fa-cube"></i> API Unit Tests</a
                 >
               </li>

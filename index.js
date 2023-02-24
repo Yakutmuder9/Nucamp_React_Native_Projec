@@ -10,6 +10,20 @@
 document.addEventListener("DOMContentLoaded", function () {
   let navbar = document.querySelector(".navbar");
   let links = document.getElementsByTagName("a");
+  const menuToggle = document.querySelector(".menu-toggle");
+  const menu = document.querySelector(".menu");
+
+  // get current URL
+  const currentUrl = window.location.href;
+
+  // find the link that matches the current URL
+  const navLinks = document.querySelectorAll(".nav-link");
+  navLinks.forEach((link) => {
+    if (link.href === currentUrl) {
+      // add "active" class to the matching link
+      link.classList.add("current-page");
+    }
+  });
 
   navbar.classList.add("slide-down");
   for (let i = 0; i < links.length; i++) {
@@ -22,10 +36,6 @@ document.addEventListener("DOMContentLoaded", function () {
       }, 500);
     });
   }
-
-  // button to toggle the menu, and a list of links in the menu.
-  const menuToggle = document.querySelector(".menu-toggle");
-  const menu = document.querySelector(".menu");
 
   menuToggle.addEventListener("click", function () {
     menuToggle.classList.toggle("active");
