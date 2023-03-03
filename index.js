@@ -13,6 +13,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const menuToggle = document.querySelector(".menu-toggle");
   const menu = document.querySelector(".menu");
 
+
+ 
   // get current URL
   const currentUrl = window.location.href;
 
