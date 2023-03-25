@@ -742,7 +742,9 @@ nav {
 #database .first-view {
     background: var(--purple-1);
 }
-
+#database-grid img{
+    width: 100%;
+}
 
 /* -----Api testing page style start here------*/
 #row {
