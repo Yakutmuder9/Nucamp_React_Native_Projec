@@ -748,6 +748,9 @@ nav {
 }
 
 /* -----Api testing page style start here------*/
+#api-test {
+    height: auto;
+}
 #row {
     display: flex !important;
 }
