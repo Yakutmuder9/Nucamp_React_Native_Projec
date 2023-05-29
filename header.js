@@ -51,6 +51,11 @@ class Header extends HTMLElement {
                   <i class="fa fa-cube"></i> API Unit Tests</a
                 >
               </li>
+              <li>
+                <a href="./web-430/ahmedin-tech-value-stream.html" class="nav-link">
+                  <i class="fa fa-cube"></i>Devops Presentations </a
+                >
+              </li>
             </ul>
           </li>
         </ul>
@@ -79,6 +84,11 @@ class Header extends HTMLElement {
               <li>
                 <a href="api-testing.html">
                   <i class="fa fa-cube"></i> API Unit Tests</a
+                >
+              </li>
+              <li>
+                <a href="ahmedin-tech-value-stream.html">
+                  <i class="fa fa-cube"></i>Devops Presentations </a
                 >
               </li>
           
