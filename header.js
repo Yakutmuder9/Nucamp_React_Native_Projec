@@ -18,7 +18,7 @@ class Header extends HTMLElement {
     <header class="navbar">
     <div class="container">
       <div class="header-log">
-        <a href="/index.html">
+        <a href="/Personal-Portfolio/index.html">
           <img src="./images/logo.png" alt="" />
         </a>
       </div>
@@ -26,13 +26,13 @@ class Header extends HTMLElement {
       <div class="nav-container">
         <ul class="nav-lists">
           <li>
-            <a href="/index.html" class="nav-link"> <i class="fa fa-home"></i> Home </a>
+            <a href="/Personal-Portfolio/index.html" class="nav-link"> <i class="fa fa-home"></i> Home </a>
           </li>
           <li>
-            <a href="/about.html" class="nav-link"> <i class="fa fa-exclamation"></i> About </a>
+            <a href="/Personal-Portfolio/about.html" class="nav-link"> <i class="fa fa-exclamation"></i> About </a>
           </li>
           <li>
-            <a href="/projects.html" class="nav-link"
+            <a href="/Personal-Portfolio/projects.html" class="nav-link"
               ><i class="fa fa-product-hunt"></i> Projects</a
             >
           </li>
@@ -42,17 +42,17 @@ class Header extends HTMLElement {
             <i class="fa fa-angle-down"></i>
             <ul>
               <li>
-                <a href="/database.html" class="nav-link"
+                <a href="/Personal-Portfolio/database.html" class="nav-link"
                   ><i class="fa fa-database"></i> Database Diagrams</a
                 >
               </li>
               <li>
-                <a href="/api-testing.html" class="nav-link">
+                <a href="/Personal-Portfolio/api-testing.html" class="nav-link">
                   <i class="fa fa-cube"></i> API Unit Tests</a
                 >
               </li>
               <li>
-                <a href="./web-430/ahmedin-tech-value-stream.html" class="nav-link">
+                <a href="/Personal-Portfolio/web-430/ahmedin-tech-value-stream.html" class="nav-link">
                   <i class="fa fa-cube"></i>Devops Presentations </a
                 >
               </li>
@@ -64,20 +64,20 @@ class Header extends HTMLElement {
       <nav>
         <ul class="menu container">
           <li>
-            <a href="/index.html"> <i class="fa fa-home"></i> Home </a>
+            <a href="index.html"> <i class="fa fa-home"></i> Home </a>
           </li>
           <li>
-            <a href="/about.html"> <i class="fa fa-exclamation"></i> About </a>
+            <a href="about.html"> <i class="fa fa-exclamation"></i> About </a>
           </li>
           <li>
-            <a href="/projects.html"
+            <a href="projects.html"
               ><i class="fa fa-product-hunt"></i> Projects</a
             >
           </li>
 
 
           <li>
-                <a href="/database.html"
+                <a href="database.html"
                   ><i class="fa fa-database"></i> Database Diagrams</a
                 >
               </li>
@@ -87,7 +87,7 @@ class Header extends HTMLElement {
                 >
               </li>
               <li>
-                <a href="/ahmedin-tech-value-stream.html">
+                <a href="ahmedin-tech-value-stream.html">
                   <i class="fa fa-cube"></i>Devops Presentations </a
                 >
               </li>
@@ -95,7 +95,7 @@ class Header extends HTMLElement {
 
           <li>
             <button type="submit" class="neon-btn">
-              <a href="/resume.html">Resume</a>
+              <a href="resume.html">Resume</a>
               <i class="fa fa-caret-right"></i>
             </button>
           </li>
@@ -108,7 +108,7 @@ class Header extends HTMLElement {
         </nav>
         
         <button type="submit" class="neon-btn fade-out nav-resume-btn" >
-          <a href="/resume.html" id="resume-a-btn">Resume</a> <i class="fa fa-caret-right"></i>
+          <a href="resume.html" id="resume-a-btn">Resume</a> <i class="fa fa-caret-right"></i>
         </button>
     </div>
   </header>
