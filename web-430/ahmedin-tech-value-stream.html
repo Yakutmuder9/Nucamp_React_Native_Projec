@@ -33,19 +33,39 @@
   <body>
     <header-component></header-component>
 
-    <main class="landing">
-      <div class="card">
-        <div class="card-body">
-          <video controls autoplay reload="none" style="width: 1000px">
-            <source
-              src="../devops-presentations/devops-presentations.mp4"
-              type="video/mp4"
-            />
-          </video>
+    <div id="devOpsPresentation">
+      <div class="bukket-view-container">
+        <h1 class="gradient-text">DevOps Persentations</h1>
+
+        <div class="grid-container" id="database-grid">
+
+          <div class="card">
+            <h2>The Technology Value Stream</h2>
+            <div class="card-body">
+              <video controls autoplay reload="none" style="width: 100%">
+                <source
+                  src="../devops-presentations/devops-presentations.mp4"
+                  type="video/mp4"
+                />
+              </video>
+            </div>
+          </div>
+
+          <div class="card">
+            <h2>The Two-Pizza Team Rule</h2>
+            <div class="card-body">
+              <video controls autoplay reload="none" style="width: 100%">
+                <source
+                  src="../devops-presentations/devops-presentations-2.mp4"
+                  type="video/mp4"
+                />
+              </video>
+            </div>
+          </div>
         </div>
       </div>
-    </main>
-
+    </div>
+    
+    <footer-component></footer-component>
   </body>
 </html>
-
