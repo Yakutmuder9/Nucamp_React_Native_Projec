@@ -64,20 +64,20 @@ class Header extends HTMLElement {
       <nav>
         <ul class="menu container">
           <li>
-            <a href="index.html"> <i class="fa fa-home"></i> Home </a>
+            <a href="/index.html"> <i class="fa fa-home"></i> Home </a>
           </li>
           <li>
-            <a href="about.html"> <i class="fa fa-exclamation"></i> About </a>
+            <a href="/about.html"> <i class="fa fa-exclamation"></i> About </a>
           </li>
           <li>
-            <a href="projects.html"
+            <a href="/projects.html"
               ><i class="fa fa-product-hunt"></i> Projects</a
             >
           </li>
 
 
           <li>
-                <a href="database.html"
+                <a href="/database.html"
                   ><i class="fa fa-database"></i> Database Diagrams</a
                 >
               </li>
@@ -87,7 +87,7 @@ class Header extends HTMLElement {
                 >
               </li>
               <li>
-                <a href="ahmedin-tech-value-stream.html">
+                <a href="/ahmedin-tech-value-stream.html">
                   <i class="fa fa-cube"></i>Devops Presentations </a
                 >
               </li>
@@ -95,7 +95,7 @@ class Header extends HTMLElement {
 
           <li>
             <button type="submit" class="neon-btn">
-              <a href="resume.html">Resume</a>
+              <a href="/resume.html">Resume</a>
               <i class="fa fa-caret-right"></i>
             </button>
           </li>
@@ -108,7 +108,7 @@ class Header extends HTMLElement {
         </nav>
         
         <button type="submit" class="neon-btn fade-out nav-resume-btn" >
-          <a href="resume.html" id="resume-a-btn">Resume</a> <i class="fa fa-caret-right"></i>
+          <a href="/resume.html" id="resume-a-btn">Resume</a> <i class="fa fa-caret-right"></i>
         </button>
     </div>
   </header>
