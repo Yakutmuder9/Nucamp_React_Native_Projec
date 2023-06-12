@@ -64,30 +64,30 @@ class Header extends HTMLElement {
       <nav>
         <ul class="menu container">
           <li>
-            <a href="index.html"> <i class="fa fa-home"></i> Home </a>
+            <a href="/Personal-Portfolio/index.html"> <i class="fa fa-home"></i> Home </a>
           </li>
           <li>
-            <a href="about.html"> <i class="fa fa-exclamation"></i> About </a>
+            <a href="/Personal-Portfolio/about.html"> <i class="fa fa-exclamation"></i> About </a>
           </li>
           <li>
-            <a href="projects.html"
+            <a href="/Personal-Portfolio/projects.html"
               ><i class="fa fa-product-hunt"></i> Projects</a
             >
           </li>
 
 
           <li>
-                <a href="database.html"
+                <a href="/Personal-Portfolio/database.html"
                   ><i class="fa fa-database"></i> Database Diagrams</a
                 >
               </li>
               <li>
-                <a href="api-testing.html">
+                <a href="/Personal-Portfolio/api-testing.html">
                   <i class="fa fa-cube"></i> API Unit Tests</a
                 >
               </li>
               <li>
-                <a href="ahmedin-tech-value-stream.html">
+                <a href="/Personal-Portfolio/ahmedin-tech-value-stream.html">
                   <i class="fa fa-cube"></i>Devops Presentations </a
                 >
               </li>
@@ -95,7 +95,7 @@ class Header extends HTMLElement {
 
           <li>
             <button type="submit" class="neon-btn">
-              <a href="resume.html">Resume</a>
+              <a href="/Personal-Portfolio/resume.html">Resume</a>
               <i class="fa fa-caret-right"></i>
             </button>
           </li>
@@ -105,10 +105,10 @@ class Header extends HTMLElement {
           <span></span>
           <span></span>
         </div>
-        </nav>
+      </nav>
         
         <button type="submit" class="neon-btn fade-out nav-resume-btn" >
-          <a href="resume.html" id="resume-a-btn">Resume</a> <i class="fa fa-caret-right"></i>
+          <a href="/Personal-Portfolio/resume.html" id="resume-a-btn">Resume</a> <i class="fa fa-caret-right"></i>
         </button>
     </div>
   </header>
